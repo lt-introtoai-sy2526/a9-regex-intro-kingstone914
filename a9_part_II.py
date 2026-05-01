@@ -82,6 +82,6 @@ if __name__ == "__main__":
     assert get_birth_date("Alan Turing") == "1912-06-23", "Incorrect birth date for Alan Turing"
     assert get_birth_date("Tim Berners-Lee") == "1955-06-08", "Incorrect birth date for Tim Berners-Lee"
     assert get_birth_date("Anita Borg") == "1949-01-17", "Incorrect birth date for Anita Borg"
-    print('\n<<<< Birth date tests error >>>>')
+    print('\n<<<< Birth date tests passed >>>>')
 
-    print('\n<<<< Failed! >>>>')
+    print('\n<<<< All tests passed! >>>>')
