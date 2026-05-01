@@ -15,19 +15,9 @@ def get_page_html(title: str) -> str:
     Returns:
         html of the page
     """
-    response = requests.get(
-        "https://en.wikipedia.org/w/api.php;",
-        params={
-            "action": "parse",
-            "page": title,
-            "prop": "text",
-            "format": "json",
-        },
-        headers={"User-Agent": "intro-ai-class/1.0"}
-    )
-    data = response.json()
-    return data["parse"]["text"]["*"]
+
     return WikipediaPage(title).html()
+    
 
 
 def get_first_infobox_text(html: str) -> str:
